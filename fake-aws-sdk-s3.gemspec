@@ -1,7 +1,6 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fake-aws/s3/version'
+require "fake-aws/s3/version"
 
 Gem::Specification.new do |spec|
 
@@ -10,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Mike Williams"]
   spec.email         = ["mdub@dogbiscuit.org"]
 
-  spec.summary       = %q{A fake implementation of Aws::S3::Resource}
+  spec.summary       = "A fake implementation of Aws::S3::Resource"
   spec.description   = spec.summary
   spec.homepage      = "http://github.com/mdub/fake-aws-sdk"
   spec.license       = "MIT"
