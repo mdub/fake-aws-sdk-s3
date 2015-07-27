@@ -16,4 +16,20 @@ shared_examples_for "Aws::S3::Resource" do
 
   end
 
+  describe "#bucket" do
+
+    context "with a non-existant bucket name" do
+
+      let(:bucket) { s3.bucket("foobar-flibble-crazy-lady") }
+
+      describe "#exists?" do
+        it "is false" do
+          expect(bucket).not_to exist
+        end
+      end
+
+    end
+
+  end
+
 end

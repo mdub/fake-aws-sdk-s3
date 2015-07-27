@@ -6,7 +6,19 @@ module FakeAws
       def buckets
         {}
       end
-      
+
+      def bucket(name)
+        NullBucket.new
+      end
+
+    end
+
+    class NullBucket
+
+      def exists?
+        false
+      end
+
     end
 
   end
