@@ -28,6 +28,12 @@ shared_examples_for "Aws::S3::Resource" do
         end
       end
 
+      describe "#name" do
+        it "returns the name" do
+          expect(bucket.name).to eql(existing_bucket_name)
+        end
+      end
+
     end
 
     context "with a non-existant bucket name" do
