@@ -8,6 +8,8 @@ if ENV.key?("AWS_ACCESS_KEY_ID")
 
     let(:s3) { described_class.new }
 
+    let(:existing_bucket_name) { "fake-aws-sdk-s3-test" }
+
     it_behaves_like "Aws::S3::Resource"
 
   end
