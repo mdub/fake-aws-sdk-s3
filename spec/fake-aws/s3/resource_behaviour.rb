@@ -10,9 +10,13 @@ shared_examples_for "Aws::S3::Resource" do
       expect(result).to be_kind_of(Enumerable)
     end
 
-    # it "returns a BucketCollection" do
-    #   s3.buckets.should be_kind_of(FakeAWS::S3::BucketCollection)
-    # end
+    it "contains Buckets" do
+      expect(result.first).to be_kind_of(bucket_class)
+    end
+
+    it "lists existing buckets" do
+      expect(result.map(&:name)).to include(existing_bucket_name)
+    end
 
   end
 

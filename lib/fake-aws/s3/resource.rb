@@ -10,7 +10,7 @@ module FakeAws
       end
 
       def buckets
-        {}
+        @storage.keys.map { |name| bucket(name) }
       end
 
       def bucket(name)

@@ -6,7 +6,7 @@ require_relative "resource_behaviour.rb"
 describe FakeAws::S3::Resource do
 
   let(:s3) { described_class.new }
-
+  let(:bucket_class) { FakeAws::S3::Bucket }
   let(:existing_bucket_name) { "bucket-o-fish" }
 
   before do
