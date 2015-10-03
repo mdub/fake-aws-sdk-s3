@@ -1,37 +1,19 @@
-# Fake::Aws::Sdk::S3
+# FakeAws::S3
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'fake-aws-sdk-s3'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install fake-aws-sdk-s3
+This gem provides a fake implementation of `Aws::S3::Resource`, from [`aws-sdk-ruby`](https://github.com/aws/aws-sdk-ruby)
 
 ## Usage
 
-TODO: Write usage instructions here
+Substitute `FakeAws::S3::Resource` for `Aws::S3::Resource`.
 
-## Development
+```
+require 'fake-aws/s3'
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake rspec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+s3 = FakeAws::S3::Resource.new
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/fake-aws-sdk-s3.
-
+s3.bucket("test-bucket").create
+s3.bucket("test-bucket").object("foo").put("bar")
+```
 
 ## License
 
