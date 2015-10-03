@@ -11,7 +11,7 @@ shared_examples_for "Aws::S3::Resource" do
     end
 
     it "contains Buckets" do
-      expect(result.first).to be_kind_of(bucket_class)
+      expect(result.first.class.name).to end_with("::Bucket")
     end
 
     it "lists existing buckets" do

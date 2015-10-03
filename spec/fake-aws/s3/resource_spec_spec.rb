@@ -10,7 +10,6 @@ if ENV.key?("FAKE_AWS_SDK_TEST_BUCKET")
     let(:s3) { described_class.new }
 
     let(:existing_bucket_name) { ENV.fetch("FAKE_AWS_SDK_TEST_BUCKET") }
-    let(:bucket_class) { Aws::S3::Bucket }
 
     it_behaves_like "Aws::S3::Resource"
 
