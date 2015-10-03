@@ -17,6 +17,7 @@ module FakeAws
       def create
         raise "hell" if exists?
         @storage[name] = {}
+        :dummy_return_value
       end
 
       private
