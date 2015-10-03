@@ -18,6 +18,16 @@ shared_examples_for "Aws::S3::Bucket" do
       end
     end
 
+    describe "#object" do
+
+      it "returns the named object" do
+        result = bucket.object("foobar")
+        expect(result.class.name).to end_with("::Object")
+        expect(result.key).to eql("foobar")
+      end
+
+    end
+
   end
 
   context "non-existant" do

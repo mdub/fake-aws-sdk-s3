@@ -1,3 +1,5 @@
+require "fake-aws/s3/object"
+
 module FakeAws
   module S3
 
@@ -18,6 +20,10 @@ module FakeAws
         raise "hell" if exists?
         @storage[name] = {}
         :dummy_return_value
+      end
+
+      def object(key)
+        Object.new(key)
       end
 
       private
