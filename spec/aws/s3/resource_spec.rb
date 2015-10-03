@@ -1,7 +1,7 @@
 require "spec_helper"
 require "aws-sdk-resources"
 
-require_relative "resource_behaviour.rb"
+require_relative "resource_behaviour"
 
 if ENV.key?("FAKE_AWS_SDK_TEST_BUCKET")
 

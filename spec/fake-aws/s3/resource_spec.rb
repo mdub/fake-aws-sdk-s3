@@ -1,7 +1,7 @@
 require "spec_helper"
 require "fake-aws/s3/resource"
 
-require_relative "resource_behaviour.rb"
+require_relative "../../aws/s3/resource_behaviour"
 
 describe FakeAws::S3::Resource do
 
