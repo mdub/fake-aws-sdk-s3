@@ -1,6 +1,6 @@
 # FakeAws::S3
 
-[![Build Status](https://travis-ci.org/realestate-com-au/fake-aws-sdk-s3.svg?branch=master)](https://travis-ci.org/realestate-com-au/fake-aws-sdk-s3)
+[![Build Status](https://travis-ci.org/mdub/fake-aws-sdk-s3.svg?branch=master)](https://travis-ci.org/mdub/fake-aws-sdk-s3)
 
 This gem provides a fake implementation of `Aws::S3::Resource`, from [`aws-sdk-ruby`](https://github.com/aws/aws-sdk-ruby)
 
