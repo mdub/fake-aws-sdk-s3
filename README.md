@@ -1,6 +1,6 @@
 # FakeAws::S3
 
-**WARNING: abandonware**: This project never went anywhere, and was never released.  I decided to focus on faking out the
+**WARNING: abandonware**: This project was abandoned in favour of https://github.com/mdub/sham_s3.
 
 <hr/>
 
