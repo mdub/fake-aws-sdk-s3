@@ -1,6 +1,8 @@
 # FakeAws::S3
 
-[![Build Status](https://travis-ci.org/mdub/fake-aws-sdk-s3.svg?branch=master)](https://travis-ci.org/mdub/fake-aws-sdk-s3)
+**WARNING: abandonware**: This project never went anywhere, and was never released.  I decided to focus on faking out the
+
+<hr/>
 
 This gem provides a fake implementation of `Aws::S3::Resource`, from [`aws-sdk-ruby`](https://github.com/aws/aws-sdk-ruby)
 
